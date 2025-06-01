@@ -4,7 +4,7 @@ import gymnasium as gym
 import numpy as np
 import gym_aloha
 
-env = gym.make("gym_aloha/AlohaInsertion-v0")
+env = gym.make("gym_aloha/AlohaInsertion-v0", obs_type="pixels_agent_pos")
 observation, info = env.reset()
 frames = []
 
